@@ -14,11 +14,26 @@
             rel="stylesheet">
 
     <title>여기에 오스타그램 만들꺼임 </title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            border-radius: 70%;
+            overflow: hidden;
+        }
+
+        .profile {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    </style>
 </head>
 <body>
 
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!--상단 네이게이션 바 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed;width: 100%">
     <div class="container-fluid" style="justify-content: space-between;flex-wrap: nowrap; min-width: 1000px">
         <a class="navbar-brand" href="#"><img style="width: 100px"
                                               src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"></a>
@@ -36,6 +51,41 @@
 </nav>
 
 
+<div style="display: flex; flex-direction: row;text-align: center; justify-content: center;padding-top: 60px; background:#FAFAFA">
+    <div style="width: 500px;min-width: 500px; height: 1000px; margin-right: 300px">
+        <div style="border: solid 1px gray;background-color: white">
+            <div style="display: flex;flex-direction: row;align-items: center;margin:0 20px">
+                <div class="box" style="width: 40px;height: 40px">
+                    <img class="profile"
+                         src="https://d1bg8rd1h4dvdb.cloudfront.net/upload/imgServer/storypick/editor/2020062615503065168.jpg">
+                </div>
+                <div>
+                    oh.99
+                </div>
+            </div>
+            <div><img style="width:100% " src="https://www.ana.co.jp/japan-travel-planner/okinawa/img/hero.jpg"></div>
+            <div style="margin: 0 20px;display: flex;flex-direction: row; justify-content: space-between">
+                <div>
+                    <span class="material-icons-outlined">favorite_border</span>
+                    <span class="material-icons-outlined">mode_comment</span>
+                    <span class="material-icons-outlined">send</span>
+                </div>
+                <div>
+                    <span class="material-icons-outlined">bookmark_border</span>
+                </div>
+            </div>
+            <div style="margin:0 20px;text-align: left;font-size: 14px">리트리버 주인외 5명이 좋아합니다.</div>
+            <div style="margin:0 20px;text-align: left;font-size: 16px"><b>oh.99</b>요즘에 해외여행을 가고 싶어하는 사람이 많습니다.</div>
+            <div style="margin:0 20px;text-align: left;font-size: 14px"><b>hoho</b>저두 얼른 해외여행 가고 싶습니다 ㅠㅠ </div>
+            <div style="margin:0 20px;text-align: left;font-size: 14px"><b>zozo</b>너무나도 아름다워요 </div>
+
+            <div><input type="text" class="form-control" style="box-shadow: none; border: none; outline: none" placeholder="댓글을 달아주세요.."></div>
+        </div>
+    </div>
+    <div style="width: 400px; height: 1000px;background: orange; position: fixed;left: 62%">
+        오른쪽
+    </div>
+</div>
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
